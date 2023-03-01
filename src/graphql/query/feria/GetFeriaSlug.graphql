@@ -1,0 +1,27 @@
+query GetFeriaSlug($slug: String) {
+  GetFeriaSlug(slug: $slug) {
+    feriaId
+    titulo
+    slug
+    descripcionCorta
+    descripcionLarga
+    terminosCondiciones
+    imagenPrincipal {
+      id
+      titulo
+      url
+    }
+    imagenSecundaria {
+      id
+      titulo
+      url
+    }
+    fecha
+    hora
+    fechaInicial
+    horaInicial
+    fechaFinal
+    horaFinal
+    descuento
+  }
+}

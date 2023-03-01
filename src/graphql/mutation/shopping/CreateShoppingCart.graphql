@@ -1,0 +1,3 @@
+mutation CreateShoppingCart($input: ShoppingCartInput!) {
+  CreateShoppingCart(input: $input)
+}
