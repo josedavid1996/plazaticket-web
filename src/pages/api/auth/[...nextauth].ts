@@ -32,7 +32,7 @@ export const AuhtOptions: AuthOptions = {
         password: { label: 'Password', type: 'password' }
       },
 
-      async authorize(credentials: any) {
+      async authorize(credentials) {
         try {
           const res = await request(URI, LOGIN_AUTH, {
             input: {
